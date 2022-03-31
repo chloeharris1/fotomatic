@@ -27,6 +27,8 @@ html {
 
 .image-container img {
     display: block;
+    /* Added max-width property so images cover but do not exceed the width of the image container */
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -129,6 +131,8 @@ header .mobile {
     border: solid 1px #979797;
     border-radius: 4px;
     background-color: #9dc20b;
+    /* Added margin properties */
+    margin: 10.625rem 10%;
 }
 
 #sign-up-cta .content {
@@ -292,6 +296,8 @@ header .mobile {
 }
 
 #filters-section .images-container {
+    /* Added display property of flex, to make images-container a flex container*/
+    display: flex;
     max-width: 100%;
     padding: 0 1%;
 }
@@ -332,7 +338,7 @@ header .mobile {
     padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
     padding-right: 1.875rem;
     font-family: "Palatino", serif;
     font-size: 1.875rem;
