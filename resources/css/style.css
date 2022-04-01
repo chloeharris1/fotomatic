@@ -242,6 +242,8 @@ header .mobile {
 .feature h2 {
     padding-bottom: .5rem;
     font-size: 2.25rem;
+    /* Added line height to match spec */
+    line-height: 1.2;
     font-weight: bold;
     color: #4a4a4a;
 }
@@ -257,7 +259,8 @@ header .mobile {
     .feature h2 {
         font-size: 1.125rem;
         line-height: 1.3;
-        font-weight: normal;
+        /* Updated font weight to bold */
+        font-weight: bold;
     }
     .feature h3 {
         font-size: .875rem;
@@ -328,9 +331,6 @@ header .mobile {
     }
     #filters-section .images-container {
         padding: 0;
-    }
-    #filters-section .extra {
-        display: none;
     }
 }
 
