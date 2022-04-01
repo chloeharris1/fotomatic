@@ -365,7 +365,8 @@ header .mobile {
     #quotes-section content {
         padding: 1.875rem .625rem;
     }
-    #quotes-section quote {
+    /* Fixed incorrect quote class selector*/
+    #quotes-section .quote {
         font-size: 1.5rem;
         line-height: 1.4;
     }
