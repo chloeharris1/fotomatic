@@ -357,7 +357,10 @@ header .mobile {
     color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+
+/* Fixed incorrect quote citation class selector */
+
+#quotes-section .quote-citation {
     height: 1.875rem;
 }
 
@@ -370,7 +373,8 @@ header .mobile {
         font-size: 1.5rem;
         line-height: 1.4;
     }
-    #quotes-section quote-citation {
+    /* Fixed incorrect quote citation class selector */
+    #quotes-section .quote-citation {
         display: block;
         padding-top: 1rem;
         margin: auto;
