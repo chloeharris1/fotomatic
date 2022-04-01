@@ -232,6 +232,13 @@ header .mobile {
     margin: 0 auto;
 }
 
+
+/* Added content section selector to match spec padding  */
+
+.feature .content {
+    padding: 2.5rem 0;
+}
+
 .feature h2 {
     padding-bottom: .5rem;
     font-size: 2.25rem;
@@ -334,7 +341,10 @@ header .mobile {
     background-color: #f3f3f3;
 }
 
-#quotes-section content {
+
+/* Fixed incorrect content class selector*/
+
+#quotes-section .content {
     padding: 5rem 0;
 }
 
