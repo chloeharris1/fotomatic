@@ -279,7 +279,7 @@ footer .copyright {
 /* 8) Media Queries */
 
 
-/* UNIVERSAL STYLES */
+/* Universal Styles */
 
 @media only screen and (max-width: 760px) {
     .main-content {
@@ -328,6 +328,8 @@ footer .copyright {
         height: 28rem;
     }
     #sign-up-cta {
+        /* Added margin auto so 'Instant Format Camera' text is centered on smaller screen sizes  */
+        margin: auto;
         position: static;
         width: auto;
         height: auto;
@@ -377,7 +379,8 @@ footer .copyright {
 
 @media only screen and (max-width: 760px) {
     #features-section {
-        flex-flow: column;
+        /* Changed flow to row so features are next to eachother*/
+        flex-flow: row;
         padding: 0;
     }
     .feature {
@@ -387,6 +390,24 @@ footer .copyright {
     /* Added padding values for content section */
     .feature .content {
         padding: 1.25rem 0 1.875rem 0;
+    }
+    /* Added bold font-weight to feature header */
+    .feature h2 {
+        font-weight: bold;
+    }
+}
+
+
+/* Added media query so features stack in a column on mobile devices  */
+
+@media only screen and (max-width: 450px) {
+    #features-section {
+        flex-flow: column;
+        padding: 0;
+    }
+    /* Features header has a normal font-weight for mobile devices*/
+    .feature h2 {
+        font-weight: normal;
     }
 }
 
@@ -429,6 +450,9 @@ footer .copyright {
     #quotes-section .quote {
         font-size: 1.5rem;
         line-height: 1.4;
+        /* Added side padding to quote */
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     /* Fixed incorrect quote citation class selector */
     #quotes-section .quote-citation {
@@ -439,9 +463,40 @@ footer .copyright {
 }
 
 
+/* Adding padding to both sides of the quote for mobile devices */
+
+@media only screen and (max-width: 450px) {
+    #quotes-section .quote {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
 /* FOOTER */
 
-@media only screen and (min-width: 760px) {
+
+/* Changed from min-width to max-width */
+
+@media only screen and (max-width: 760px) {
+    footer .content {
+        font-size: .625rem;
+    }
+}
+
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 450px) {
+    #sign-up-section {
+        height: 20rem;
+    }
+    #sign-up-cta h1 {
+        font-size: 2.25rem;
+    }
+    #sign-up-cta h2 {
+        font-size: 2rem;
+    }
     footer .content {
         font-size: .625rem;
     }
