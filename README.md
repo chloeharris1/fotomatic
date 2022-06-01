@@ -1,4 +1,5 @@
 # Fotomatic
+![license badge](https://img.shields.io/badge/license-MIT-blue)
 
 A Codecademy project in the Front-End-Engineer career path. 
 
@@ -19,6 +20,9 @@ Check out the project specs [here](https://content.codecademy.com/courses/freela
 
 ## Link 
 https://chloeharris1.github.io/fotomatic/
+
+## License
+Licensed under the MIT license.
 
 ## Questions 
 [Email Me](Chloe.a.harris17@gmail.com) if you have any questions.
